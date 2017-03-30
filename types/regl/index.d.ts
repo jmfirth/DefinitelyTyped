@@ -3,53 +3,48 @@
 // Definitions by: My Self <https://github.com/me>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-export as namespace createREGL;
-
-export = REGL;
-
-/*
 declare module 'regl' {
   import CreateREGL = createREGL
   export = CreateREGL.REGL;
 }
 
 declare namespace createREGL {
-    */
+
     /**
      * Creates a full screen canvas element and a WebGL rendering context.
      */
-    declare function REGL(): REGL.Regl;
+    function REGL(): REGL.Regl;
     /**
      * Creates a WebGL rendering context using an element selected by `selector`.
      *
      * @param selector an argument to `document.querySelector`
      */
-    declare function REGL(selector: string): REGL.Regl;
+    function REGL(selector: string): REGL.Regl;
     /**
      * Creates a WebGL rendering context using a `<canvas>` element.
      *
      * @param canvas HTML canvas element
      */
-    declare function REGL(canvas: HTMLCanvasElement): REGL.Regl;
+    function REGL(canvas: HTMLCanvasElement): REGL.Regl;
     /**
      * Creates a canvas element and a WebGL rendering context in a given container element.
      *
      * @param container an HTML element
      */
-    declare function REGL(container: HTMLElement): REGL.Regl;
+    function REGL(container: HTMLElement): REGL.Regl;
     /**
      * Wraps an existing WebGL rendering context.
      *
      * @param gl WebGL rendering context
      */
-    declare function REGL(gl: WebGLRenderingContext): REGL.Regl;
+    function REGL(gl: WebGLRenderingContext): REGL.Regl;
     /**
      * Creates a WebGL according to specified `options`
      */
-    declare function REGL(options: REGL.InitializationOptions): REGL.Regl;
+    function REGL(options: REGL.InitializationOptions): REGL.Regl;
 
 
-    declare namespace REGL {
+    namespace REGL {
 
         /**
          * Documentation for interface `Regl`.
@@ -1141,4 +1136,4 @@ declare namespace createREGL {
             data: any;
         }
     }
-// }
+}
