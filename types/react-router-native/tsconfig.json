@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": "../",
+    "typeRoots": ["../"],
+    "types": [],
+    "lib": ["es6"],
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "target": "es6",
+    "module": "es6",
+    "moduleResolution": "node",
+    "jsx": "react-native"
+  },
+  "files": [
+    "index.d.ts",
+    "react-router-native-tests.tsx"
+  ]
+}
